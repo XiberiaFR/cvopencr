@@ -1,3 +1,19 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Body
+*  2.0 - Columns
+*  3.0 - Header tags
+*  4.0 - Paragraphs
+*  5.0 - Links
+*  6.0 - Images
+*  7.0 - Icons
+*  8.0 - Footer
+*/
+
+
+/* 1.0 - Body */
+
 body
 {
 	width:100%;
@@ -7,40 +23,7 @@ body
 	border: solid 2px rgba(128, 128, 128, 0.30);
 }
 
-.contact>*
-{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.about>*
-{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.hobbies>*
-{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.cvdetails .column1-3
-{
-	padding:30px 0px;
-}
-
-.cvdetails .column2-3
-{
-	padding-top: 50px;
-}
-
-/*Photo+titre+baseline*/
-
-.top
-{
-	display: flex;
-}
+/* 2.0 - Columns */
 
 .column1-3
 {
@@ -109,6 +92,34 @@ body
 	margin-right: 5%;
 }
 
+.contact>*
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.about>*
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.hobbies>*
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.cvdetails .column1-3
+{
+	padding:30px 0px;
+}
+
+.cvdetails .column2-3
+{
+	padding-top: 50px;
+}
+
 .nameandbaseline
 {
 	margin-top: 70px;
@@ -125,28 +136,17 @@ header .column1-3
 	align-content: center;
 }
 
-img
-{
-	border-radius: 50%;
-	border: 4px solid rgba(64,64,64,0.3);
-	margin-top: 70px;
-}
-
-img:hover
-{
-	border-radius: 50%;
-	border: 4px solid #FECA07;
-}
-
 .nameandbaseline>*
 {
 	margin: 0;
 }
 
-.nameandbaseline p
+.top
 {
-	font-size: x-large;
+	display: flex;
 }
+
+/* 3.0 - Header tags */
 
 h1
 {
@@ -191,24 +191,68 @@ h4
 	font-size: large;
 }
 
+
+/* 4.0 - Paragraphs */
+
+.nameandbaseline p
+{
+	font-size: x-large;
+}
+
+p
+{
+	font-size: medium;
+	line-height: 1.3;
+	margin-top: 12px;
+	text-align: justify;
+}
+
+p.jobtitle
+{
+	font-size: 1.2em;
+}
+
+
+/* 5.0 - Links */
+
+.column1-3 a
+{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+.column2-3 a
+{
+	color: #000000;
+	text-decoration:none;
+}
+
+
+/* 5.0 - Images */
+
+img
+{
+	border-radius: 50%;
+	border: 4px solid rgba(64,64,64,0.3);
+	margin-top: 70px;
+}
+
+img:hover
+{
+	border-radius: 50%;
+	border: 4px solid #FECA07;
+}
+
+
+
+/* 6.0 - Icons */
+
 .icons
 {
 	display: flex;
 	justify-content: space-evenly;
 	font-size: xx-large;
 	color: #FECA07;
-}
-
-footer
-{
-	padding-bottom: 100px;
-}
-
-footer i
-{
-	border-radius: 100%;
-	border: 2px solid #FECA07;
-	padding: 10px;
 }
 
 .column2-3 .fas
@@ -238,72 +282,36 @@ footer i
 	color: #16a085
 }
 
-.column1-3 a
+/* 7.0 - Footer */
+
+footer
 {
-	color: #FFFFFF;
-	text-decoration:none;
+	padding-bottom: 100px;
 }
 
-.column2-3 a
+footer i
 {
-	color: #000000;
-	text-decoration:none;
+	border-radius: 100%;
+	border: 2px solid #FECA07;
+	padding: 10px;
 }
 
-p
-{
-	font-size: medium;
-	line-height: 1.3;
-	margin-top: 12px;
-	text-align: justify;
-}
 
-p.jobtitle
-{
-	font-size: 1.2em;
-}
 
-/*Responsive*/
+/* Responsive - Devices less than 881px */
 
 @media (max-width: 880px) 
 {
+
+/* 1.0 - Body */
   body
   {
   	border: unset;
   }
 
-  img
-  {
-  	max-width: 100%;
-  	margin: 10px auto;
-  }
+/* 2.0 - Columns */
 
-  h1+p
-  {
-  	text-align: center;
-  }
-
-  h2
-  {
-  	margin-top:10px;
-  }
-
-  h3
-  {
-  	margin-right: unset;
-  }
-
-  p
-  {
-  	font-size: small;
-  }
-
-  .contact p
-  {
-  	text-align: center;
-  }
-
-  .top
+.top
   {
   	flex-direction: column;
   }
@@ -353,7 +361,53 @@ p.jobtitle
 	width: 45%;
   }
 
-  .fas.fa-circle 
+  .content, .recom
+  {
+  	margin-right: unset;
+  }
+
+/* 3.0 - Header tags */
+
+ h2
+  {
+  	margin-top:10px;
+  }
+
+  h3
+  {
+  	margin-right: unset;
+  }
+
+/* 4.0 - Paragraphs */
+
+ h1+p
+  {
+  	text-align: center;
+  }
+
+  p
+  {
+  	font-size: small;
+  }
+
+ .contact p
+  {
+  	text-align: center;
+  }
+
+/* 5.0 - Links */
+
+/* 6.0 - Images */
+
+img
+  {
+  	max-width: 100%;
+  	margin: 10px auto;
+  }
+
+/* 7.0 - Icons */
+
+ .fas.fa-circle 
   {
 	padding-right: 5px;
   }
@@ -363,16 +417,15 @@ p.jobtitle
 	padding-right: 5px;
   }
 
-  .content, .recom
-  {
-  	margin-right: unset;
-  }
+/* 8.0 - Footer */
 
-  footer
+footer
   {
   	padding-bottom: unset;
-  }
+  }  
 }
+
+/* Responsive - Devices less than 455px */
 
 @media (max-width: 454px)
 {
@@ -386,8 +439,19 @@ p.jobtitle
 		width: 100%;
 	}
 
+	h3
+	{
+		text-align: center;
+	}
+
     h3 .fas
     {
     	display: none;
     }
+
+    .recom>*
+	{
+		text-align: center;
+	}
 }
+

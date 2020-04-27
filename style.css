@@ -294,6 +294,7 @@ p
   .nameandbaseline
   {
   	text-align: center;
+  	padding-left: unset;
   }
 
   .cvdetails
@@ -330,4 +331,25 @@ p
   {
   	padding-bottom: unset;
   }
+}
+
+@media (max-width: 454px)
+{
+	.reco-column
+	{
+		flex-direction: column;
+	}
+
+	.recom
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.column2-3>* 
+    {
+    	padding-left: unset;
+    	width: 90%;
+    	margin: 15px auto;
+    }
 }

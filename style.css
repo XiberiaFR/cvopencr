@@ -269,6 +269,11 @@ p
   	margin-top:10px;
   }
 
+  h3
+  {
+  	margin-right: unset;
+  }
+
   p
   {
   	font-size: small;
@@ -288,7 +293,8 @@ p
 
   .column2-3>*
   {
-	padding-left: 5%;
+    width: 90%;
+    margin: 15px auto;
   }
 
   .nameandbaseline
@@ -327,6 +333,11 @@ p
 	padding-right: 5px;
   }
 
+  .content, .recom
+  {
+  	margin-right: unset;
+  }
+
   footer
   {
   	padding-bottom: unset;
@@ -342,14 +353,11 @@ p
 
 	.recom
 	{
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
 	}
 
-	.column2-3>* 
+    h3 .fas
     {
-    	padding-left: unset;
-    	width: 90%;
-    	margin: 15px auto;
+    	display: none;
     }
 }

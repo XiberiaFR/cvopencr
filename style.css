@@ -1,7 +1,7 @@
 body
 {
 	width:100%;
-	max-width: 1280px;
+	max-width: 1800px;
 	margin: 0 auto;
 	font-family: sansationregular;
 	border: solid 2px rgba(128, 128, 128, 0.30);
@@ -45,14 +45,14 @@ body
 .column1-3
 {
 	background-color: #16a085;
-	width: 25%;
+	width: 35%;
 	color: #FFFFFF
 }
 
 .column2-3
 {
 	background-color: #FFFFFF;
-	width: 75%;
+	width: 65%;
 	display: flex;
 	flex-direction: column;
 	padding-left: 5%

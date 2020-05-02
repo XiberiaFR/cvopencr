@@ -2,7 +2,7 @@
 *  CSS TABLE OF CONTENTS
 *   
 *  1.0 - Body
-*  2.0 - Columns
+*  2.0 - Columns and rows
 *  3.0 - Header tags
 *  4.0 - Paragraphs
 *  5.0 - Links
@@ -23,7 +23,7 @@ body
 	border: solid 2px rgba(128, 128, 128, 0.30);
 }
 
-/* 2.0 - Columns */
+/* 2.0 - Columns and rows */
 
 .column1-3
 {
@@ -154,7 +154,7 @@ header .column1-3
 h1
 {
 	text-transform: uppercase;
-	font-size: xxx-large;
+	font-size: 3em;
 	font-family:sansation_lightlight;
 }
 
@@ -166,7 +166,6 @@ h1 .name
 h2 .headerunderline
 {
 	text-decoration: underline #FECA07;
-	white-space: break-spaces;
 }
 
 h3.h3aside 
@@ -179,7 +178,7 @@ h3.h3aside
 	font-size: x-large;
 }
 
-h2.h2article
+h2.h2section
 {	padding-bottom: 5px;
 	margin-right: 5%;
 	border-bottom: 3px solid #FECA07;
@@ -187,7 +186,7 @@ h2.h2article
 	font-size: x-large;
 }
 
-h3.h3article
+h3.h3section
 {
 	margin-top: 15px;
 	margin-bottom: 0px;
@@ -327,7 +326,7 @@ footer i
   	border: unset;
   }
 
-/* 2.0 - Columns */
+/* 2.0 - Columns and rows */
 
 .top
   {
@@ -457,7 +456,7 @@ footer
 		width: 100%;
 	}
 
-	h2.h2article
+	h2.h2section
 	{
 		text-align: center;
 	}
